@@ -574,7 +574,7 @@ public class DefaultMIMETypes {
 		addMIMEType((short)439, "audio/x-realaudio", "ra");
 		addMIMEType((short)440, "audio/x-scpls", "pls");
 		addMIMEType((short)441, "audio/x-sd2", "sd2");
-		addMIMEType((short)442, "audio/x-wav", "wav");
+		addMIMEType((short)442, "audio/vnd.wave", "wav");
 		addMIMEType((short)443, "chemical/x-pdb", "pdb");
 		addMIMEType((short)444, "chemical/x-xyz", "xyz");
 		addMIMEType((short)445, "image/cgm");
@@ -755,6 +755,9 @@ public class DefaultMIMETypes {
 		addMIMEType((short)620, "audio/ogg", "oga");
 		addMIMEType((short)621, "audio/flac", "flac");
 		addMIMEType((short)622, "image/webp", "webp");
+		addMIMEType((short)623, "image/avif", "avif");
+		addMIMEType((short)624, "image/heic", "heic");
+		addMIMEType((short)625, "image/heif", "heif");
 	}
 	
 	/** Guess a MIME type from a filename.
