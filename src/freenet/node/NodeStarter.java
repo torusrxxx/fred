@@ -109,10 +109,6 @@ public class NodeStarter implements WrapperListener {
 			System.out.println("Usage: $ java freenet.node.Node <configFile>");
 			return Integer.valueOf(-1);
 		}
-		String builtWithMessage = "freenet.jar built with freenet-ext.jar Build #" + ExtVersion.buildNumber + " r" + ExtVersion.cvsRevision+" running with ext build "+extBuildNumber+" r" + extRevisionNumber;
-		Logger.normal(this, builtWithMessage);
-		System.out.println(builtWithMessage);
-
 		File configFilename;
 		if(args.length == 0) {
 			System.out.println("Using default config filename freenet.ini");
@@ -147,6 +143,11 @@ public class NodeStarter implements WrapperListener {
 			e.printStackTrace();
 			return Integer.valueOf(-2);
 		}
+
+		String builtWithMessage = "freenet.jar built with freenet-ext.jar Build #" + ExtVersion.buildNumber + " r" + ExtVersion.cvsRevision+" running with ext build "+extBuildNumber+" r" + extRevisionNumber;
+		Logger.normal(this, builtWithMessage);
+		System.out.println(builtWithMessage);
+
 
 		System.out.println("Starting executor...");
 		executor.start();
